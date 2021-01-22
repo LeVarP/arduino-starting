@@ -52,8 +52,8 @@ cv2.namedWindow( "result" )
 
 cap = video.create_capture(0) # ловим камеру
 
-hsv_min = np.array((80, 60, 60), np.uint8) # нижняя граница зеленого в HSV
-hsv_max = np.array((160, 255, 255), np.uint8) # верxняя граница зеленого в HSV
+hsv_min = np.array((59, 49, 56), np.uint8) # нижняя граница зеленого в HSV
+hsv_max = np.array((95, 255, 255), np.uint8) # верxняя граница зеленого в HSV
 
 while True:  
 
@@ -91,7 +91,7 @@ while True:
     ch = cv2.waitKey(5) # выxод через escp
     if ch == 27:
         break
-    time.sleep(0.02) # временная задержка, что6ы из6авиться от осциляции 
+    time.sleep(0.02) # временная задержка, что6ы из6авиться от осцилляции 
 
 cap.release()
 cv2.destroyAllWindows()
